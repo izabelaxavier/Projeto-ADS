@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+header, footer {
+  background-color: #1c1c1c;
+  color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#integrantes {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.membro {
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 12px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.membro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+}
+
+.membro img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.membro h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+/* Toggle e descrição */
+.membro input[type="checkbox"] {
+  display: none;
+}
+
+.membro .descricao {
+  display: none;
+  margin-top: 10px;
+}
+
+.membro input[type="checkbox"]:checked ~ .descricao {
+  display: block;
+}
+
+/* Botões GitHub e LinkedIn */
+.botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  max-width: 180px;
+}
+
+.botao i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.botao.github {
+  background-color: #333;
+}
+
+.botao.github:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+.botao.linkedin {
+  background-color: #0077b5;
+}
+
+.botao.linkedin:hover {
+  background-color: #005f8d;
+  transform: scale(1.05);
+}
+
+#tarefas {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 12px;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+th {
+  background-color: #2a2a2a;
+}
+
+#sobre {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+footer a {
+  color: #aaddff;
+  text-decoration: underline;
+}
